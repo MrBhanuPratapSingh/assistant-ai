@@ -86,7 +86,7 @@ function takeCommand(message) {
         speak("ohh, Nice thing, Dear vaise aap kaha jana pasand karoge.")
     } else if (message.includes('aur') || message.includes('bataen')) {
         speak("Aur Sab Badhiyan hi hai. Aap mujhe bataen me kya kar sakti hu apke liye.")
-    } else if (message.includes('shree Ram') || message.includes('ram')) {
+    } else if (message.includes('shree Ram') || message.includes('ram ram')) {
         speak("jai jay shree Ram.")
     } else if (message.includes('shree radhey') || message.includes('radhe radhe')) {
         speak("jai jay shree Radhey.")
@@ -132,10 +132,13 @@ function takeCommand(message) {
         window.open("tel:+919235044732")
     } else if (message.includes('open whatsapp')) {
         speak("opening whatsapp")
-        window.open("https://api.whatsapp.com/send/?phone=+917380757082&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
+        window.open("https://api.whatsapp.com/send/?phone=+919161674344&text=This+Massage+from+AI.Contact+Us&type=phone_number&app_absent=0")
     } else if (message.includes('open facebook')) {
         speak("opening facebook")
         window.open("https://www.facebook.com/")
+    } else if (message.includes('open instagram')) {
+        speak("opening instagram")
+        window.open("https://www.instagram.com/")
     } else {
         speak(`This is what I found on internet regarding: ${message.replace("Veronica", "")}`)
         window.open(`https://www.google.com/search?q=${message}`)
